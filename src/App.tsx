@@ -7,22 +7,33 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import ReactFullpage from '@fullpage/react-fullpage';
 
 function App() {
-  return (
-    <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+  return (<>
+    <Navbar />
+    <div className="relative w-full overflow-y-auto overflow-x-hidden">
+      
+    
+    <div id="second" className="relative w-full h-full ">
+      <Home />
+    </div>
+    
+    {/* <div id="third" className="relative w-full h-[100vh]">
+      <Portfolio />
+    </div> */}
+    
+    <div id="fourth" className="relative w-full h-full">
+      <About />
+    </div>
+
+    <div id="fifth" className="relative w-full h-full">
+      <Contact />
+    </div>
+  </div>
+  <Footer />
+  </>
+
   );
 }
 

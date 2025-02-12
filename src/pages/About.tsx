@@ -50,7 +50,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -139,7 +139,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -175,7 +175,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
